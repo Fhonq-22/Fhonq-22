@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="libs/all.min.css">
+    <title>Phòng</title>
 </head>
 <body>
+    <!-- ____________________________________HEADER____________________________________ -->
     <header>
         <div class="cover-container">
             <img src="IMG/cover-image.jpg" alt="Cover Image" class="cover-image">
@@ -21,47 +23,142 @@
             </div>
             <button id="theme-button" class="toggle-switch"></button>
         </div>
-
     </header>
-
-<main>
-    <div class="main-container">
-        <ul class="tags">
-            <li class="tag" data-tag="about">VỀ TÔI</li>
-            <li class="tag" data-tag="projects">CÁC DỰ ÁN</li>
-            <li class="tag" data-tag="other">KHÁC</li>
-        </ul>
-        <section id="about" class="tag-content active">
-            <h2>Về tôi</h2>
-            <p>Write something about yourself here.</p>
-        </section>
-        <section id="projects" class="tag-content">
-            <h2>Các dự án</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Project description goes here.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Project description goes here.</p>
-            </div>
-        </section>
-        <section id="other" class="tag-content">
-            <h2>Khác</h2>
-            <p>Write something about yourself here.</p>
-        </section>
-    </div>
-</main>
-
-
+    <!-- ____________________________________MAIN____________________________________ -->
+    <main>
+        <div class="main-container">
+            <ul class="tags">
+                <li class="tag" data-tag="about">TÔI</li>
+                <li class="tag" data-tag="hobbies">SỞ THÍCH</li>
+                <li class="tag" data-tag="projects">DỰ ÁN</li>
+                <li class="tag" data-tag="contact">LIÊN HỆ</li>
+                <li class="tag" data-tag="other">KHÁC</li>
+            </ul>
+            <!-- -----------------------------Về tôi----------------------------- -->
+            <section id="about" class="tag-content active">
+                <h2>Về tôi</h2>
+                <div class="info-box">
+                    <div class="info-label">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="info-content">Hoàng Văn Phòng</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-label">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="info-content">08/03/2001</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-label">
+                        <i class="fas fa-map-marker"></i>
+                    </div>
+                    <div class="info-content">Thái Nguyên</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-label">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="info-content">Mong muốn đem lại những giải pháp sáng tạo, độc đáo và ảnh hưởng đến cách mọi người tương tác với công nghệ trong cuộc sống hàng ngày.</div>
+                </div>
+            </section>
+            <!-- -----------------------------Sở thích----------------------------- -->
+            <section id="hobbies" class="tag-content">
+                <h2>Sở thích</h2>
+                <p>Write something about yourself here.</p>
+            </section>
+            <!-- -----------------------------Dự án----------------------------- -->
+            <section id="projects" class="tag-content">
+                <h2>Các dự án</h2>
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Project description goes here.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Project description goes here.</p>
+                </div>
+            </section>
+            <!-- -----------------------------Liên hệ----------------------------- -->
+            <section id="contact" class="tag-content">
+                <h2>Liên hệ</h2>
+                <div class="group">
+                    <h3>Mạng xã hội</h3>
+                    <div class="social-links">
+                        <div class="social-item">
+                            <a href="https://facebook.com/fhonq.hvp38.6UQHd.22o" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a href="https://www.tiktok.com/@fhonq.22" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                                Tiktok
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a href="https://www.instagram.com/fhonq.22" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+                        </div>
+                        <!-- Thêm các mạng xã hội khác tương tự -->
+                    </div>
+                </div>
+                <div class="group">
+                    <h3>Công việc</h3>
+                    <div class="social-links">
+                        <div class="social-item">
+                            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Github
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a href="https://zalo.me/link/ketbanzalo" target="_blank" id="zalo-link">
+                                <i class="fas fa-mobile-alt"></i>
+                                Zalo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <h3>Học tập</h3>
+                    <div class="social-links">
+                        <div class="social-item">
+                            <a href="https://www.duolingo.com/profile/Fhonq.22" target="_blank">
+                                <i class="fas fa-book"></i>
+                                Duolingo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <h3>Game</h3>
+                    <div class="social-links">
+                        <div class="social-item">
+                            <a href="https://i-881.ihago.net/d/4zHHd" target="_blank">
+                                <i class="fas fa-gamepad"></i>
+                                Hago
+                            </a>
+                        </div>
+                        <!-- Thêm các game khác tương tự -->
+                    </div>
+                </div>
+            </section>
+            <!-- -----------------------------Khác----------------------------- -->
+            <section id="other" class="tag-content">
+                <h2>Khác</h2>
+                <p>Write something about yourself here.</p>
+            </section>
+        </div>
+    </main>
+    <!-- ____________________________________FOOTER____________________________________ -->
     <footer>
-        <ul class="social-links">
-            <li><a href="https://www.facebook.com/your-profile" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/your-profile" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
-            <!-- Thêm các liên kết khác tại đây -->
-        </ul>
     </footer>
+    <!-- ____________________________________SCRIPT___________________________________ -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
