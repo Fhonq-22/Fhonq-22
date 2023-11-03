@@ -1,3 +1,6 @@
+:root {
+    --random-color: #f06; /* Giá trị mặc định nếu biến JavaScript chưa được cài đặt */
+}
 body {
     width: 80%;
     margin: 0 auto;
@@ -180,10 +183,9 @@ header {
 /*_____________________MAIN_____________________*/
 main {
     width: 100%;
-    max-height: 400px;
     border-radius: 0 0 20px 20px;
     margin: 0 auto;
-    overflow-y: auto; /* Hiển thị thanh cuộn khi cần thiết */
+    overflow-y: auto;
 }
 
 .main-container {
@@ -193,9 +195,11 @@ main {
 /*-----------------Các tag-----------------*/
 .tags {
     display: flex;
+    flex-wrap: wrap; /* Cho phép các tag tự xuất hiện thành nhiều hàng */
     justify-content: center;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .tag {
@@ -206,6 +210,7 @@ main {
     line-height: 30px; /* Căn văn bản giữa các tag */
     border-radius: 12px;
     border: 2px solid; gray;
+    font-weight: bold;
 }
 
 .tag-content {
@@ -218,21 +223,103 @@ main {
 
 section {
     margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
+/*-----------------Về tôi-----------------*/
+.info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-label, .info-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.info-label {
+    flex: 20%;
+    background-color: #aaa;
+}
+
+.info-content {
+    flex: 60%;
+    background-color: #ddd;
+}
+
+/*-----------------Liên hệ-----------------*/
+.group {
+    border: 2px solid #ddd;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    position: relative; /* Để có thể định vị tiêu đề */
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.group h3 {
+    position: absolute;
+    max-width: 100%; /* Giới hạn chiều rộng tối đa */
+    white-space: nowrap; /* Ngăn chữ xuống dòng */
+    top: -40px; /* Điều chỉnh khoảng cách từ mép trên */
+    left: 50%; /* Để căn giữa ngang */
+    transform: translateX(-50%); /* Để căn giữa ngang */
+    background-color: #ccc; /* Để làm nền cho tiêu đề */
+    padding: 10px; /* Điều chỉnh độ rộng của nền */
+    border-radius: 20px;
+    z-index: 1; /* Để tiêu đề nằm trên phần tử .social-item */
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các mục tự động xuống dòng khi cần */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-top: 20px;
+}
+
+.social-item {
+    min-width: 40%;
+    margin: 20px; /* Đặt khoảng cách giữa các phần tử */
+    border: 2px solid gray;
+    border-radius: 20px;
+    flex: 1; /* Cài đặt các phần tử để tự động chiếm hết chiều rộng khi không đủ chỗ trên cùng một dòng */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 10px;
+    cursor: pointer;
+    /* Sử dụng biến CSS thay vì giá trị cứng */
+    background: linear-gradient(to right, var(--random-color) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s, color 0.3s;
+}
+
+.social-item.active {
+    background-position: left bottom;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid gray;
+    padding: 10px 5%;
+}
+
+a i::after{
+    content: "|"; /* Thêm kí tự | vào sau thẻ i */
+    margin: 0 10px; /* Khoảng cách giữa kí tự | và nội dung */
+}
+
+#zalo-link i {
+    font-size: 14px; /* Điều chỉnh kích thước theo ý muốn */
+}
 .project {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-}
-.social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.social-links li {
-    margin: 0 10px;
 }
