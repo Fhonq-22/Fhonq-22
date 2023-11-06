@@ -252,6 +252,35 @@ section {
     background-color: #ddd;
 }
 
+/*-----------------Sở thích-----------------*/
+.hobby-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobby {
+    text-align: center;
+    border: 2px solid #ddd; /* Thêm border */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f2f2f2; /* Màu nền */
+    margin: 10px;
+    flex-basis: calc(25% - 44px); /* Hiển thị 4 sở thích trên 1 hàng và cách nhau */
+    /* Còn lại của mã CSS */
+}
+
+.hobby i {
+    font-size: 36px; /* Kích thước của biểu tượng */
+    color: #333; /* Màu của biểu tượng */
+}
+
+.hobby p {
+    margin: 10px 0; /* Khoảng cách giữa biểu tượng và tên sở thích */
+    font-size: 18px; /* Đặt kích thước font */
+    font-weight: bold; /* Đặt độ đậm của font */
+}
+
 /*-----------------Liên hệ-----------------*/
 .group {
     border: 2px solid #ddd;
@@ -318,6 +347,7 @@ a i::after{
 #zalo-link i {
     font-size: 14px; /* Điều chỉnh kích thước theo ý muốn */
 }
+
 .project {
     border: 1px solid #ddd;
     padding: 10px;
