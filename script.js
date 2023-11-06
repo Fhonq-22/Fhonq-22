@@ -100,6 +100,82 @@ infoLabels.forEach((label) => {
     });
 });
 
+// __________________________________________________
+// _____________________SỞ THÍCH_____________________
+
+function showHobbyInfo(hobbyName) {
+    let description = '';
+    let images = '';
+
+    // Xác định nội dung và hình ảnh dựa vào tên sở thích
+    if (hobbyName === 'Nghe nhạc') {
+        description = 'Tớ thường dành thời gian để nghe nhạc, '+
+        'bởi âm nhạc là cách tốt để thư giãn sau một ngày làm việc căng thẳng.';
+        images = '<img src="IMG/hobbies/.jpg" alt="Music Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Music Image 2">';
+    } else if (hobbyName === 'Đọc truyện tranh') {
+        description = 'Tớ thường đắm chìm trong những tình tiết hấp dẫn trong truyện tranh. '+
+        'Không biết cậu có thích đọc truyện Doraemon, Conan như mình không nhỉ?';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Chơi cờ') {
+        description = 'Không chỉ giúp rèn luyện tư duy chiến thuật và sự kiên nhẫn, '+
+        'nó còn khiến tớ có niềm vui lớn khi chiến thắng. '+
+        'Cậu có muốn chơi với tớ 1 ván cờ không?';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Xem phim') {
+        description = 'Tớ là người đam mê điện ảnh. Dù là phim hài, học đường, BL, hoặc kinh dị, '+
+        'thì tớ vẫn luôn sẵn sàng thả mình vào thế giới của điện ảnh.';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Du lịch') {
+        description = 'Tớ yêu việc khám phá những nơi mới, '+
+        'học về văn hóa địa phương, cũng như tạo ra những kỷ niệm đáng nhớ. '+
+        'Cậu có muốn đến Hàn Quốc, DisneyLand cùng tớ không^^?.';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Chơi game') {
+        description = 'Chơi game là cách tuyệt vời để tớ thư giãn và kết nối với bạn bè. '+
+        'Cậu có thể vào phần <strong>"Liên hệ"</strong> để xem tớ đang chơi game gì nhiều nhé!';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Thú cưng') {
+        description = 'Thú cưng không chỉ là bạn đồng hành mà còn là một phần quan trọng trong cuộc sống của tớ.'+
+        'Tớ thì thích mèo, còn cậu?';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Chụp ảnh') {
+        description = 'Tớ thích lưu giữ những khoảnh khắc đẹp qua những bức ảnh và chia sẻ chúng với mọi người. '+
+        'Nó giúp tớ thấy thế giới xung quanh từ một góc độ mới.';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Vẽ') {
+        description = 'Đây cũng là cách để tớ thư giãn và tạo ra những tác phẩm "độc đáo".';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Học ngoại ngữ') {
+        description = 'Tớ luôn quan tâm đến việc học ngoại ngữ và hiện tớ đang cố học tiếng Trung.';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    } else if (hobbyName === 'Thiên văn học') {
+        description = 'Tớ thích quan sát sao trên bầu trời đêm và các hiện tượng thiên văn. '+
+        'Cùng lắng nghe câu chuyện của các ngôi sao và hành tinh trong vũ trụ nhá...';
+        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
+                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+    }
+
+    Swal.fire({
+        title: hobbyName,
+        html: '<p>' + description + '</p>' + images,
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            content: 'hobby-popup'
+        }
+    });
+}
+
 // _________________________________________________
 // _____________________LIÊN HỆ_____________________
 
