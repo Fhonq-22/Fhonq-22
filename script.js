@@ -113,7 +113,7 @@ function showHobbyInfo(hobbyName) {
         description = 'Tớ thường dành thời gian để nghe nhạc, '+
         'bởi âm nhạc là cách tốt để thư giãn sau một ngày làm việc căng thẳng.';
         images = '<img src="IMG/hobbies/music01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
-        audio = '<audio controls autoplay><source src="Audio/2OClock-Dori.mp3" type="audio/mpeg"></audio>';
+        audio = '<audio controls autoplay style="width: 100%;"><source src="Audio/2OClock-Dori.mp3" type="audio/mpeg"></audio>';
     } else if (hobbyName === 'Đọc truyện tranh') {
         description = 'Tớ thường đắm chìm trong những tình tiết hấp dẫn trong truyện tranh. '+
         'Không biết cậu có thích đọc truyện Doraemon, Conan như tớ không nhỉ?';
