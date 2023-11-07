@@ -106,68 +106,62 @@ infoLabels.forEach((label) => {
 function showHobbyInfo(hobbyName) {
     let description = '';
     let images = '';
+    let audio = '';
 
     // Xác định nội dung và hình ảnh dựa vào tên sở thích
     if (hobbyName === 'Nghe nhạc') {
         description = 'Tớ thường dành thời gian để nghe nhạc, '+
         'bởi âm nhạc là cách tốt để thư giãn sau một ngày làm việc căng thẳng.';
-        images = '<img src="IMG/hobbies/.jpg" alt="Music Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Music Image 2">';
+        images = '<img src="IMG/hobbies/music01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
+        audio = '<audio controls autoplay><source src="Audio/2OClock-Dori.mp3" type="audio/mpeg"></audio>';
     } else if (hobbyName === 'Đọc truyện tranh') {
         description = 'Tớ thường đắm chìm trong những tình tiết hấp dẫn trong truyện tranh. '+
-        'Không biết cậu có thích đọc truyện Doraemon, Conan như mình không nhỉ?';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        'Không biết cậu có thích đọc truyện Doraemon, Conan như tớ không nhỉ?';
+        images = '<img src="IMG/hobbies/comic01.gif" style="width: 40%; display: inline-block; margin: 0 5%;">' +
+                 '<img src="IMG/hobbies/comic02.gif" style="width: 40%; display: inline-block; margin: 0 5%;">';
     } else if (hobbyName === 'Chơi cờ') {
         description = 'Không chỉ giúp rèn luyện tư duy chiến thuật và sự kiên nhẫn, '+
         'nó còn khiến tớ có niềm vui lớn khi chiến thắng. '+
         'Cậu có muốn chơi với tớ 1 ván cờ không?';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/chess01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
     } else if (hobbyName === 'Xem phim') {
-        description = 'Tớ là người đam mê điện ảnh. Dù là phim hài, học đường, BL, hoặc kinh dị, '+
+        description = 'Tớ là người đam mê điện ảnh. Dù là phim hài, hoạt hình, học đường, BL, hoặc kinh dị, '+
         'thì tớ vẫn luôn sẵn sàng thả mình vào thế giới của điện ảnh.';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/movie01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
     } else if (hobbyName === 'Du lịch') {
         description = 'Tớ yêu việc khám phá những nơi mới, '+
         'học về văn hóa địa phương, cũng như tạo ra những kỷ niệm đáng nhớ. '+
         'Cậu có muốn đến Hàn Quốc, DisneyLand cùng tớ không^^?.';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/travel01.gif" style="width: 40%; display: inline-block; margin: 0 5%;">' +
+                 '<img src="IMG/hobbies/travel02.gif" style="width: 40%; display: inline-block; margin: 0 5%;">';
     } else if (hobbyName === 'Chơi game') {
         description = 'Chơi game là cách tuyệt vời để tớ thư giãn và kết nối với bạn bè. '+
         'Cậu có thể vào phần <strong>"Liên hệ"</strong> để xem tớ đang chơi game gì nhiều nhé!';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/game01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
     } else if (hobbyName === 'Thú cưng') {
         description = 'Thú cưng không chỉ là bạn đồng hành mà còn là một phần quan trọng trong cuộc sống của tớ.'+
         'Tớ thì thích mèo, còn cậu?';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/pet01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
     } else if (hobbyName === 'Chụp ảnh') {
         description = 'Tớ thích lưu giữ những khoảnh khắc đẹp qua những bức ảnh và chia sẻ chúng với mọi người. '+
         'Nó giúp tớ thấy thế giới xung quanh từ một góc độ mới.';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/photo01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
     } else if (hobbyName === 'Vẽ') {
         description = 'Đây cũng là cách để tớ thư giãn và tạo ra những tác phẩm "độc đáo".';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/draw01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
     } else if (hobbyName === 'Học ngoại ngữ') {
         description = 'Tớ luôn quan tâm đến việc học ngoại ngữ và hiện tớ đang cố học tiếng Trung.';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/study01.gif" style="width: 80%; display: inline-block; margin: 0 10%;">';
     } else if (hobbyName === 'Thiên văn học') {
         description = 'Tớ thích quan sát sao trên bầu trời đêm và các hiện tượng thiên văn. '+
         'Cùng lắng nghe câu chuyện của các ngôi sao và hành tinh trong vũ trụ nhá...';
-        images = '<img src="IMG/hobbies/.jpg" alt="Comics Image 1">' +
-                 '<img src="IMG/hobbies/.jpg" alt="Comics Image 2">';
+        images = '<img src="IMG/hobbies/universe01.gif" style="width: 40%; display: inline-block; margin: 0 5%;">' +
+                 '<img src="IMG/hobbies/universe02.gif" style="width: 40%; display: inline-block; margin: 0 5%;">';
     }
 
     Swal.fire({
         title: hobbyName,
-        html: '<p>' + description + '</p>' + images,
+        html: '<p>' + description + '</p>' + images + audio,
         showCloseButton: true,
         showConfirmButton: false,
         customClass: {
