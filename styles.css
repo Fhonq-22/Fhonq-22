@@ -454,3 +454,69 @@ a i::after{
 #zalo-link i {
     font-size: 14px; /* Điều chỉnh kích thước theo ý muốn */
 }
+
+/*-----------------Khác-----------------*/
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.8s ease-in-out;
+}
+
+.task-future{
+    color: gray;
+}
+
+.task.clicked {
+    background-color: yellow; /* Màu khi được nhấn */
+}
+
+.task-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #007BFF; /* Màu của hình tròn */
+    margin-right: 10px;
+    transition: background-color 0.65s ease-in-out;
+}
+
+.task-circle.clicked {
+    background-color: #FF69B4; /* Màu khi được nhấn */
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.task-time, .task-description{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: none; /* Ban đầu ẩn */
+    font-style: italic;
+}
+
+.task-content i {
+    margin: 0 5px;
+    font-style: italic;
+    font-size: 14px;
+}
