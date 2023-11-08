@@ -281,6 +281,113 @@ section {
     font-weight: bold; /* Đặt độ đậm của font */
 }
 
+/*-----------------Dự án-----------------*/
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project-image {
+    width: 40%;
+    position: relative;
+    margin: 10px 5%;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 100px;
+    object-fit: cover;
+}
+
+.project-content {
+    width: 45%;
+    padding: 0 10px;
+    margin: 10px 5% 10px 0%;
+}
+
+.three-dots {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 2px;
+    line-height: 100%; /* Điều chỉnh line-height */
+    height: 24px;
+}
+
+.three-dots::before {
+    content: "\2026"; /* Ký hiệu ba chấm */
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 125px;
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 4px;
+    margin: 2px auto;  
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.participants-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+    left: 5%;
+    padding: 10px;
+}
+
+.member i{
+    margin-right: 8px;
+}
+
+.mem-crown{
+    color: tomato;
+    font-weight: bold;
+}
+.mem-user{
+    color: blueviolet;
+}
+
 /*-----------------Liên hệ-----------------*/
 .group {
     border: 2px solid #ddd;
@@ -346,10 +453,4 @@ a i::after{
 
 #zalo-link i {
     font-size: 14px; /* Điều chỉnh kích thước theo ý muốn */
-}
-
-.project {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
 }
