@@ -65,7 +65,6 @@
             <!-- -----------------------------Sở thích----------------------------- -->
             <section id="hobbies" class="tag-content">
                 <h2>Sở thích</h2>
-                <p>Write something about yourself here.</p>
                 <div class="hobby-container">
                     <div class="hobby" onclick="showHobbyInfo('Nghe nhạc')">
                         <i class="fas fa-music"></i>
@@ -118,12 +117,73 @@
             <section id="projects" class="tag-content">
                 <h2>Các dự án</h2>
                 <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Project description goes here.</p>
+                    <div class="project-image">
+                        <img src="IMG/projects/duan01.png" alt="Project Image">
+                        <div class="three-dots" onclick="toggleDropdown(this)"></div>
+                        <div class="dropdown">
+                            <div class="dropdown-content">
+                                <a href="https://fhonq-22.github.io/DoanSo" onclick="showDetails()">Xem chi tiết</a>
+                                <a onclick="showParticipants(1)">Người tham gia</a>
+                                <div class="participants-list" id="participants-list-1">
+                                    <span class="member mem-crown"><i class="fas fa-crown"></i>Phòng</span>
+                                    <br>
+                                    <span class="member mem-user"><i class="fas fa-user"></i>-</span>
+                                    <br>
+                                    <span class="member mem-user"><i class="fas fa-user"></i>-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Đoán số</h3>
+                        <p>Đoán một số có 4 chữ số và không có chữ số nào lặp lại.</p>
+                    </div>
                 </div>
                 <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Project description goes here.</p>
+                    <div class="project-image">
+                        <img src="IMG/projects/duan02.png" alt="Project Image">
+                        <div class="three-dots" onclick="toggleDropdown(this)"></div>
+                        <div class="dropdown">
+                            <div class="dropdown-content">
+                                <a href="https://fhonq-22.github.io/TimOKhacBiet" onclick="showDetails()">Xem chi tiết</a>
+                                <a onclick="showParticipants(2)">Người tham gia</a>
+                                <div class="participants-list" id="participants-list-2">
+                                    <span class="member mem-crown"><i class="fas fa-crown"></i>Phòng</span>
+                                    <br>
+                                    <span class="member mem-user"><i class="fas fa-user"></i>-</span>
+                                    <br>
+                                    <span class="member mem-user"><i class="fas fa-user"></i>-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tìm ô khác biệt</h3>
+                        <p>Tìm và nhấn vào ô màu có màu khác biệt từ 9 ô màu khá giống nhau.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="IMG/projects/null.png" alt="Project Image">
+                        <div class="three-dots" onclick="toggleDropdown(this)"></div>
+                        <div class="dropdown">
+                            <div class="dropdown-content">
+                                <a onclick="showDetails()">Xem chi tiết</a>
+                                <a onclick="showParticipants(-1)">Người tham gia</a>
+                                <div class="participants-list" id="participants-list--1">
+                                    <span class="member mem-crown"><i class="fas fa-crown"></i>Tớ & cậu</span>
+                                    <br>
+                                    <span class="member mem-user"><i class="fas fa-user"></i>Ai đó</span>
+                                    <br>
+                                    <span class="member mem-user"><i class="fas fa-user"></i>Ai đó</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dự án tương lai</h3>
+                        <p><strong>Liên hệ</strong> với tớ để cùng nhau hợp tác trong dự án mới nhé!</p>
+                    </div>
                 </div>
             </section>
             <!-- -----------------------------Liên hệ----------------------------- -->
