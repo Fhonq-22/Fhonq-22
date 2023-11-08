@@ -170,6 +170,38 @@ function showHobbyInfo(hobbyName) {
     });
 }
 
+// _______________________________________________
+// _____________________DỰ ÁN_____________________
+
+function toggleDropdown(element) {
+    var dropdown = element.nextElementSibling;
+    var dropdownContent = dropdown.querySelector(".dropdown-content");
+    dropdownContent.classList.toggle("show");
+}
+
+function showDetails() {
+    const target = event.target;
+    const href = target.getAttribute('href');
+
+    if (!href) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
+        Swal.fire({
+            text: "Dự án không khả dụng!",
+            icon: "error",
+            confirmButtonText: "OK"
+        });
+    }
+}
+
+function showParticipants(projectId) {
+    var participantsList = document.getElementById('participants-list-' + projectId);
+    if (participantsList.style.display === 'block') {
+        participantsList.style.display = 'none';
+    } else {
+        participantsList.style.display = 'block';
+    }
+}
+
 // _________________________________________________
 // _____________________LIÊN HỆ_____________________
 
