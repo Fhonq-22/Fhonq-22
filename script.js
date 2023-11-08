@@ -243,3 +243,22 @@ document.getElementById("zalo-link").addEventListener("click", function(event) {
     confirmButtonColor: "#3085d6",
   });
 });
+
+
+// ______________________________________________
+// _____________________KHÁC_____________________
+
+$(document).ready(function () {
+    $(".task").click(function () {
+        var $task = $(this);
+        $task.addClass("clicked");
+        setTimeout(function() {
+            $task.removeClass("clicked");
+        }, 500);
+
+        var $taskContent = $task.find(".task-content");
+        var $taskCircle = $task.find(".task-circle");
+        $taskCircle.toggleClass("clicked");
+        $taskContent.find(".task-time, .task-description").toggle();
+    });
+});
