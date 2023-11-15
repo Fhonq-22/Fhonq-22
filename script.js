@@ -244,7 +244,6 @@ document.getElementById("zalo-link").addEventListener("click", function(event) {
   });
 });
 
-
 // ______________________________________________
 // _____________________KHÁC_____________________
 
@@ -261,4 +260,27 @@ $(document).ready(function () {
         $taskCircle.toggleClass("clicked");
         $taskContent.find(".task-time, .task-description").toggle();
     });
+});
+
+// ______________________________________________
+// _____________________CHỮ KÝ_____________________
+
+// Đảm bảo DOM đã được load xong trước khi chạy script
+document.addEventListener("DOMContentLoaded", function() {
+  // Hiển thị chữ ký
+  $(".signature").fadeIn(3000);
+
+  // Sử dụng Anime.js để tạo hiệu ứng
+  anime({
+      targets: '.signature',
+      opacity: [0, 1], // Hiển thị từ ẩn sang hiện
+      scale: [0, 1], // Hiệu ứng kích thước
+      color: ['#000', randomColor], // Hiệu ứng màu sắc
+      translateX: [0, 0], // Hiệu ứng di chuyển theo trục X
+      translateY: [-50, 0], // Hiệu ứng di chuyển theo trục Y
+      blur: ['20px', '0px'], // Hiệu ứng độ mờ
+      easing: 'easeInOutQuad', // Kiểu easing
+      duration: 3000, // Thời gian thực hiện hiệu ứng (ms)
+      delay: 500 // Độ trễ trước khi bắt đầu hiệu ứng (ms)
+  });
 });
