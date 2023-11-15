@@ -520,3 +520,15 @@ a i::after{
     font-style: italic;
     font-size: 14px;
 }
+
+/*_____________________FOOTER_____________________*/
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Ẩn chữ ký ban đầu */
+.signature {
+    display: none;
+    font-weight: bold;
+}
