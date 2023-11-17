@@ -448,7 +448,7 @@ a {
 
 a i::after{
     content: "|"; /* Thêm kí tự | vào sau thẻ i */
-    margin: 0 10px; /* Khoảng cách giữa kí tự | và nội dung */
+    margin: 0 4px; /* Khoảng cách giữa kí tự | và nội dung */
 }
 
 #zalo-link i {
