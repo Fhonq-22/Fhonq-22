@@ -244,6 +244,20 @@ document.getElementById("zalo-link").addEventListener("click", function(event) {
   });
 });
 
+// Lắng nghe sự kiện click trên liên kết Play Together VNG
+document.getElementById("ptgvng-link").addEventListener("click", function(event) {
+  event.preventDefault(); // Ngăn chặn chuyển hướng mặc định của liên kết
+  Swal.fire({
+    title: "Play Together VNG",
+    text: "Tải ứng dụng và kết bạn với mình qua tên người dùng 'fhonq22' nhé.",
+    imageUrl: "IMG/PlayTogetherVNG.jpg", // Đường dẫn đến hình ảnh trong thư mục IMG
+    imageAlt: "Hình ảnh",
+    imageHeight: 200, 
+    confirmButtonText: "Đã xong",
+    confirmButtonColor: "#3085d6",
+  });
+});
+
 // ______________________________________________
 // _____________________KHÁC_____________________
 
